@@ -19,6 +19,7 @@ use Deployer\Initializer\Template\Yii2AdvancedAppTemplate;
 use Deployer\Initializer\Template\Yii2BasicAppTemplate;
 use Deployer\Initializer\Template\YiiTemplate;
 use Deployer\Initializer\Template\ZendTemplate;
+use Deployer\Initializer\Template\Magento2Template;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -178,6 +179,7 @@ class InitCommand extends Command
         $initializer->addTemplate('CodeIgniter', new CodeIgniterTemplate());
         $initializer->addTemplate('Drupal', new DrupalTemplate());
         $initializer->addTemplate('TYPO3', new Typo3Template());
+        $initializer->addTemplate('Magento2', new Magento2Template());
 
         return $initializer;
     }
